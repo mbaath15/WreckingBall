@@ -20,8 +20,8 @@ class Ball{
         push ();
         ellipseMode(CENTER);
         translate(pos.x, pos.y);
-        //rotate (angle);
-        ellipse(this.x, this.y, this.r);
+        rotate (angle);
+        ellipse(0, 0, this.r);  //since translate is at pos.x and pos.y, ellipse should be at 0,0
         pop ();
 
       }
